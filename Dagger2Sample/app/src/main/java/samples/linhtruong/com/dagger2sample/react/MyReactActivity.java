@@ -1,6 +1,5 @@
 package samples.linhtruong.com.dagger2sample.react;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -10,7 +9,9 @@ import android.view.KeyEvent;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
 import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
+import samples.linhtruong.com.base.BaseActivity;
 import samples.linhtruong.com.dagger2sample.R;
+import samples.linhtruong.com.dagger2sample.di.component.ReactComponent;
 import samples.linhtruong.com.utils.FVPermissionUtils;
 
 import javax.inject.Inject;
@@ -23,16 +24,16 @@ import javax.inject.Inject;
  * @organization VED
  */
 
-public class MyReactActivity extends Activity implements DefaultHardwareBackBtnHandler {
+public class MyReactActivity extends BaseActivity implements DefaultHardwareBackBtnHandler {
+
     private ReactRootView mReactRootView;
+    private ReactComponent mReactComponent;
 
     @Inject
     ReactInstanceManager mReactInstanceManager;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
+    protected void onCreateUI(Bundle bundle) {
         mReactRootView = new ReactRootView(this);
         mReactRootView.startReactApplication(mReactInstanceManager, "HelloWorld", null);
 
@@ -41,6 +42,18 @@ public class MyReactActivity extends Activity implements DefaultHardwareBackBtnH
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             grantOverlayPermission();
         }
+    }
+
+    @Override
+    protected void initDependency() {
+        mReactComponent = ReactComponent.Initializer.init();
+        mReactComponent.inject(this);
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
     }
 
     /**
@@ -83,6 +96,11 @@ public class MyReactActivity extends Activity implements DefaultHardwareBackBtnH
         if (mReactInstanceManager != null) {
             mReactInstanceManager.onPause();
         }
+    }
+
+    @Override
+    protected boolean isValid() {
+        return false;
     }
 
     @Override
