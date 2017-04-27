@@ -3,8 +3,8 @@ In this repo, I try testing [`react native`](https://facebook.github.io/react-na
 
 - [x] **Integrate to available Android source**
   + Ref: [Facebook guide](https://facebook.github.io/react-native/docs/integration-with-existing-apps.html). 
-    + Should remove `'..'` when adding `node_modules` dir to project level gradle.
-    + Need to start server, checking package.json
+    + '../' is current prj dir
+    + Need to start server, checking package.json, not start server, need to build bundle [`Bundle`](http://facebook.github.io/react-native/releases/0.19/docs/running-on-device-ios.html)
     + Can config build path on build.gradle
     
   + Integrate to this one: `Dagger2Sample`
