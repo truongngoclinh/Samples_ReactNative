@@ -15,7 +15,7 @@ In this repo, I try testing [`react native`](https://facebook.github.io/react-na
 - [x] Album project sample
   + how to use: `prop, state, scrollView, flexBox, functional component, class component, btn pressed event, http request, image, text, styles`
   + app screenshot:
-    ![ScreenShot](https://cloud.githubusercontent.com/assets/13033746/25481299/b5801a8e-2b76-11e7-9f44-7eb0ce621be3.png)
+  + ![ScreenShot](https://cloud.githubusercontent.com/assets/13033746/25481299/b5801a8e-2b76-11e7-9f44-7eb0ce621be3.png)
     
 - [ ]
 
