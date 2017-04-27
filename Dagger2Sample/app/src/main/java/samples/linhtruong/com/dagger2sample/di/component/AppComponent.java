@@ -21,7 +21,7 @@ import samples.linhtruong.com.dagger2sample.storage.LoginSession;
  */
 
 @ApplicationScope
-@Component(modules = {AppModule.class, NetworkModule.class, ReactModule.class})
+@Component(modules = {AppModule.class, NetworkModule.class})
 public interface AppComponent {
 
     final class Initialiazer {
@@ -35,5 +35,4 @@ public interface AppComponent {
     APIService exposeAPIService();
     DbManager exposeDBManager();
     LoginSession exposeLoginSession();
-    ReactInstanceManager exposeReactInstanceManager();
 }

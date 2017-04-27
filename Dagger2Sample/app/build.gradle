@@ -41,10 +41,10 @@ dependencies {
     compile libraries.dagger
 
     compile libraries.picasso
-    compile libraries.bolts
+//    compile libraries.bolts
     compile libraries.robotoTextView
-//    compile libraries.stetho
+    compile libraries.stetho
     compile libraries.loggingInterceptor
 
-    compile "com.facebook.react:react-native:+" // From node_modules.
+    compile libraries.reactNative // From node_modules.
 }

@@ -1,12 +1,11 @@
 package samples.linhtruong.com.dagger2sample.di.module;
 
-import com.facebook.react.LifecycleState;
 import com.facebook.react.ReactInstanceManager;
+import com.facebook.react.common.LifecycleState;
 import com.facebook.react.shell.MainReactPackage;
 import dagger.Module;
 import dagger.Provides;
 import samples.linhtruong.com.dagger2sample.app.App;
-import samples.linhtruong.com.dagger2sample.di.scope.ApplicationScope;
 
 /**
  * CLASS DESCRIPTION
@@ -26,7 +25,6 @@ public class ReactModule {
     }
 
     @Provides
-    @ApplicationScope
     ReactInstanceManager getReactInstanceManager() {
         return ReactInstanceManager.builder()
                 .setApplication(mApp)

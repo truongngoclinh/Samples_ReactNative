@@ -11,6 +11,7 @@ import com.facebook.react.ReactRootView;
 import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 import samples.linhtruong.com.base.BaseActivity;
 import samples.linhtruong.com.dagger2sample.R;
+import samples.linhtruong.com.dagger2sample.app.App;
 import samples.linhtruong.com.dagger2sample.di.component.ReactComponent;
 import samples.linhtruong.com.utils.FVPermissionUtils;
 
@@ -46,7 +47,7 @@ public class MyReactActivity extends BaseActivity implements DefaultHardwareBack
 
     @Override
     protected void initDependency() {
-        mReactComponent = ReactComponent.Initializer.init();
+        mReactComponent = ReactComponent.Initializer.init(App.getAppcomponent(), (App) getApplicationContext());
         mReactComponent.inject(this);
     }
 
@@ -94,7 +95,7 @@ public class MyReactActivity extends BaseActivity implements DefaultHardwareBack
         super.onPause();
 
         if (mReactInstanceManager != null) {
-            mReactInstanceManager.onPause();
+            mReactInstanceManager.onHostPause(this);
         }
     }
 
@@ -108,7 +109,7 @@ public class MyReactActivity extends BaseActivity implements DefaultHardwareBack
         super.onRestart();
 
         if (mReactInstanceManager != null) {
-            mReactInstanceManager.onResume(this, this);
+            mReactInstanceManager.onHostResume(this, this);
         }
     }
 
@@ -117,7 +118,7 @@ public class MyReactActivity extends BaseActivity implements DefaultHardwareBack
         super.onDestroy();
 
         if (mReactInstanceManager != null) {
-            mReactInstanceManager.onDestroy();
+            mReactInstanceManager.onHostDestroy();
         }
     }
 

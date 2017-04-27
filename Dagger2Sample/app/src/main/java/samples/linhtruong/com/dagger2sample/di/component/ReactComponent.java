@@ -15,6 +15,7 @@ import samples.linhtruong.com.dagger2sample.react.MyReactActivity;
  * @organization VED
  */
 
+@ReactModuleScope
 @Component(
         modules = {ReactModule.class},
         dependencies = AppComponent.class
@@ -22,8 +23,8 @@ import samples.linhtruong.com.dagger2sample.react.MyReactActivity;
 public interface ReactComponent {
 
     final class Initializer {
-        public static ReactComponent init(App app) {
-            return null;
+        public static ReactComponent init(AppComponent appComponent, App app) {
+            return DaggerReactComponent.builder().appComponent(appComponent).reactModule(new ReactModule(app)).build();
         }
     }
 

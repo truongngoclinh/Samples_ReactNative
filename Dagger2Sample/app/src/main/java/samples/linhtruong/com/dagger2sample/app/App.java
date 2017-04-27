@@ -2,6 +2,7 @@ package samples.linhtruong.com.dagger2sample.app;
 
 import android.app.Application;
 
+import android.content.Context;
 import com.facebook.stetho.Stetho;
 import io.realm.Realm;
 import samples.linhtruong.com.dagger2sample.di.component.AppComponent;

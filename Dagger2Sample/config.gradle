@@ -16,8 +16,8 @@ ext.versions = [
         androidAnnotations: '4.1.0',
         rxJava            : '1.1.8',
         rxAndroid         : '1.2.0',
-        retrofit          : '2.0.2',
-        okHttp            : '3.2.0',
+        retrofit          : '2.1.0',
+        okHttp            : '3.4.1',
         realm             : '3.0.0',
         gson              : '2.6.2',
         materialDialog    : '0.8.5.9@aar',
@@ -28,7 +28,8 @@ ext.versions = [
         picasso           : '2.5.2',
         bolts             : '1.1.4',
         stetho            : '1.4.1',
-        loggingInterceptor: '3.6.0'
+        loggingInterceptor: '3.4.1',
+        reactNative       : '+'
 ]
 
 ext.libraries = [
@@ -63,5 +64,6 @@ ext.libraries = [
         picasso                 : "com.squareup.picasso:picasso:$versions.picasso",
         bolts                   : "com.parse.bolts:bolts-android:$versions.bolts",
         stetho                  : "com.facebook.stetho:stetho:$versions.stetho",
-        loggingInterceptor      : "com.squareup.okhttp3:logging-interceptor:$versions.loggingInterceptor"
+        loggingInterceptor      : "com.squareup.okhttp3:logging-interceptor:$versions.loggingInterceptor",
+        reactNative             : "com.facebook.react:react-native:$versions.reactNative"
 ]
