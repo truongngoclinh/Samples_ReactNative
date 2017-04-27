@@ -6,6 +6,7 @@ In this repo, I try testing [`react native`](https://facebook.github.io/react-na
     + '../' is current prj dir
     + Need to start server, checking package.json, not start server, need to build bundle [`Bundle`](http://facebook.github.io/react-native/releases/0.19/docs/running-on-device-ios.html)
     + Can config build path on build.gradle
+    + Actually a switch point from Android to React-native is an pre-defined methods ReactActivity, then this activity will handle our React-native UI
     
   + Integrate to this one: `Dagger2Sample`
   
