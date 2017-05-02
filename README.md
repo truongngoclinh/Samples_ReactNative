@@ -19,6 +19,7 @@ In this repo, I try testing [`react native`](https://facebook.github.io/react-na
   + ![ScreenShot](https://cloud.githubusercontent.com/assets/13033746/25481299/b5801a8e-2b76-11e7-9f44-7eb0ce621be3.png)
     
 - [ ]
+  + how to integrate firebase, navigate between screen...
 
 
 
