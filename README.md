@@ -18,8 +18,8 @@ In this repo, I try testing [`react native`](https://facebook.github.io/react-na
   + app screenshot:
   + ![ScreenShot](https://cloud.githubusercontent.com/assets/13033746/25481299/b5801a8e-2b76-11e7-9f44-7eb0ce621be3.png)
     
-- [ ]
-  + how to integrate firebase, navigate between screen...
+- [ ] Authentication project sample
+  + how to create login form, authenticate info with firebase, working with textinput, organize import in `index.js`, handle error, sucess/error popup, screen navigator.
 
 
 
