@@ -26,6 +26,11 @@ In this repo, I try testing [`react native`](https://facebook.github.io/react-na
 - [x] Redux introduction
   + how to use redux: `redux components (action, reducer, state, store), Provider, createStore, combineReducer, reducer, mapStateToProps, connect, LayoutAnimation, TouchableWithoutFeedback, FlatList`
   + path: `test_redux_prj`
+  
+- [ ] Employee management
+  + more complicated project: `redux with tremedeous states, navigation, navigation bar ...`
+  + path: `managers`
+
 
 
 
