@@ -15,11 +15,17 @@ In this repo, I try testing [`react native`](https://facebook.github.io/react-na
 
 - [x] Album project sample
   + how to use: `props, state, scrollView, flexBox, functional component, class component, btn pressed event, http request, image, text, styles`
+  + path: `albumprj`
   + app screenshot:
   + ![ScreenShot](https://cloud.githubusercontent.com/assets/13033746/25481299/b5801a8e-2b76-11e7-9f44-7eb0ce621be3.png)
     
 - [ ] Authentication project sample
   + how to create `login form, authenticate info with firebase, working with textinput, organize import in index.js, handle error, success/error popup, screen navigator.`
+  + path: `albumprj`
+  
+- [x] Redux introduction
+  + what is redux, why we need redux, redux sample
+  + path: `test_redux_prj`
 
 
 
