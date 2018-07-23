@@ -24,7 +24,7 @@ In this repo, I try testing [`react native`](https://facebook.github.io/react-na
   + path: `albumprj`
   
 - [x] Redux introduction
-  + what is redux, why we need redux, redux sample
+  + how to use redux: `redux components (action, reducer, state, store), Provider, createStore, combineReducer, reducer, mapStateToProps, connect, LayoutAnimation, TouchableWithoutFeedback, FlatList`
   + path: `test_redux_prj`
 
 
