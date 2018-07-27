@@ -1,23 +1,33 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import reducers from './src/Reducers';
+import firebase from 'firebase';
+import LoginForm from './src/Login/LoginForm';
+import ReduxThunk from 'redux-thunk';
+import Router from './src/Navigation';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
-  }
+class App extends Component {
+    componentWillMount() {
+        const config = {
+            apiKey: 'AIzaSyCsopaznqPtXI1oZUmrVApKPWnnkt-gAQo',
+            authDomain: 'manager-4bd7c.firebaseapp.com',
+            databaseURL: 'https://manager-4bd7c.firebaseio.com',
+            projectId: 'manager-4bd7c',
+            storageBucket: 'manager-4bd7c.appspot.com',
+            messagingSenderId: '473181153946'
+        };
+        firebase.initializeApp(config);
+    }
+
+    render() {
+        const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
+        return (
+            <Provider store={store}>
+                <Router />
+            </Provider>
+        );
+    }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
