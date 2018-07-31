@@ -4,6 +4,7 @@ import { View, Image, Text, TouchableOpacity } from 'react-native';
 import LoginForm from './Login/LoginForm';
 import EmployeeList from './Employee/EmployeeList';
 import EmployeeUpdate from './Employee/EmployeeUpdate';
+import EmployeeEdit from './Employee/EmployeeEdit';
 
 export default (RouterComponent = () => {
     const path = type => {
@@ -61,7 +62,7 @@ export default (RouterComponent = () => {
                         // console.log('Right!');
                         // Actions.employee_update();
                         // }}
-                        type="reset"
+                        // type="reset"
                         renderRightButton={() =>
                             renderButton('employee_update')
                         }
@@ -73,7 +74,13 @@ export default (RouterComponent = () => {
                         renderLeftButton={() => renderButton('back')}
                         key="employee_update"
                         component={EmployeeUpdate}
-                        title="Employee"
+                        title="Employee create"
+                    />
+                    <Scene
+                        key="employee_edit"
+                        component={EmployeeEdit}
+                        title="Employee Edit"
+                        renderLeftButton={() => renderButton('back')}
                     />
                 </Scene>
             </Scene>

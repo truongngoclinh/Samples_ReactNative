@@ -30,8 +30,6 @@ class EmployeeList extends Component {
     }
 
     renderRow(employee) {
-        console.log('employee data');
-        console.dir(employee);
         return <ListItem employee={employee} />;
     }
 
@@ -49,8 +47,6 @@ class EmployeeList extends Component {
 }
 
 const mapStateToProps = state => {
-    console.log('EmployeeList connect mapStateToProps');
-    console.dir(state);
     const employees = _.map(state.employee_list, (val, uid) => {
         return { ...val, uid };
     });
