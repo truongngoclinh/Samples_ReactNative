@@ -26,6 +26,13 @@ In this repo, I try testing [`react native`](https://facebook.github.io/react-na
 - [x] Redux introduction
   + how to use redux: `redux components (action, reducer, state, store), Provider, createStore, combineReducer, reducer, mapStateToProps, connect, LayoutAnimation, TouchableWithoutFeedback, FlatList`
   + path: `test_redux_prj`
+  + redux:
+  + ![screen shot 2018-08-01 at 09 54 13](https://user-images.githubusercontent.com/13033746/43498380-e70e82a6-9570-11e8-98b7-c71d8b1801b4.png)
+  + ![screen shot 2018-08-01 at 09 54 06](https://user-images.githubusercontent.com/13033746/43498379-e5f79d76-9570-11e8-95e8-5601fe3a0506.png)
+  + app redux structure:
+  + ![screen shot 2018-07-23 at 11 02 41](https://user-images.githubusercontent.com/13033746/43498300-8bfb07ae-9570-11e8-822d-68a2f8884434.png)
+  + ![screen shot 2018-07-20 at 18 12 11](https://user-images.githubusercontent.com/13033746/43498311-93240daa-9570-11e8-84a4-ad68797baec3.png)
+ 
   
 - [x] Employee management
   + more complicated project: `redux with tremedeous states, navigation, navigation bar, passing params to component as updating props, ListView, react-native-router-flux, react-nativ-commucations, ConfirmDialog, separate actions, reducers file`
