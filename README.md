@@ -39,24 +39,19 @@ In this repo, I try testing [`react native`](https://facebook.github.io/react-na
 - [x] Employee management use firebase realtime database
   + more complicated project: `redux with tremedeous states, navigation, navigation bar, passing params to component as updating props, ListView, react-native-router-flux, react-nativ-commucations, ConfirmDialog, separate actions, reducers file`
   + path: `managers`
-  + Login `uat@ved.com.vn/123456`
-  
+  + Login `uat@ved.com.vn/123456`  
     ![simulator screen shot - iphone 7 - 2018-08-01 at 09 57 57](https://user-images.githubusercontent.com/13033746/43498525-8412cc9c-9571-11e8-8732-af9fe9ed1d73.png)
     
-  + List
- 
-  ![simulator screen shot - iphone 7 - 2018-08-01 at 09 58 16](https://user-images.githubusercontent.com/13033746/43498524-83bc2158-9571-11e8-9ee5-39760146b15a.png)
+  + List 
+    ![simulator screen shot - iphone 7 - 2018-08-01 at 09 58 16](https://user-images.githubusercontent.com/13033746/43498524-83bc2158-9571-11e8-9ee5-39760146b15a.png)
     
-  + Create
-  
-  ![simulator screen shot - iphone 7 - 2018-08-01 at 09 58 21](https://user-images.githubusercontent.com/13033746/43498523-83880b7a-9571-11e8-9e9e-e0a1fd5719b2.png)
+  + Create  
+    ![simulator screen shot - iphone 7 - 2018-08-01 at 09 58 21](https://user-images.githubusercontent.com/13033746/43498523-83880b7a-9571-11e8-9e9e-e0a1fd5719b2.png)
     
-  + Update/Delete/Text
-  
+  + Update/Delete/Text  
     ![simulator screen shot - iphone 7 - 2018-08-01 at 09 58 30](https://user-images.githubusercontent.com/13033746/43498522-83423b68-9571-11e8-8d81-15be850523d4.png)
     
-  + ConfirmDialog
-  
+  + ConfirmDialog  
     ![simulator screen shot - iphone 7 - 2018-08-01 at 09 58 39](https://user-images.githubusercontent.com/13033746/43498520-82eef96c-9571-11e8-8231-fdda127503fd.png)
   
 - [x] Advanced concepts
