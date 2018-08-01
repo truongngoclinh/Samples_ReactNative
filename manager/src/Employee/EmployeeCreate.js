@@ -4,27 +4,24 @@ import { employeeUpdate, employeeCreate } from '../Actions';
 import { connect } from 'react-redux';
 import EmployeeForm from './EmployeeForm';
 
-class EmployeeUpdate extends Component {
+class EmployeeCreate extends Component {
     componentWillMount() {
-        console.dir(this.props.employee);
-        /*       if (this.props.employee) {
-            this.props.employeeUpdate({
-                prop: 'name',
-                value: this.props.employee.name
-            });
-            this.props.employeeUpdate({
-                prop: 'phone',
-                value: this.props.employee.phone
-            });
-            this.props.employeeUpdate({
-                prop: 'shift',
-                value: this.props.employee.shift
-            });
-        } */
+        // initial state
+        this.props.employeeUpdate({
+            prop: 'name',
+            value: ''
+        });
+        this.props.employeeUpdate({
+            prop: 'phone',
+            value: ''
+        });
+        this.props.employeeUpdate({
+            prop: 'shift',
+            value: 'Monday'
+        });
     }
 
     onBtnPress() {
-        console.log('name: ' + name);
         const { name, phone, shift } = this.props;
         this.props.employeeCreate({ name, phone, shift: shift || 'Monday' });
     }
@@ -32,8 +29,7 @@ class EmployeeUpdate extends Component {
     render() {
         return (
             <Card>
-                {/* <EmployeeForm {...this.props}> */}
-                <EmployeeForm />
+                <EmployeeForm {...this.props} />
                 <CardSection>
                     <Button onBtnClick={this.onBtnPress.bind(this)}>
                         Create
@@ -49,9 +45,6 @@ const styles = {
         fontSize: 18,
         paddingLeft: 20,
         paddingTop: 5
-    },
-    pickerStyle: {
-        // flex: 1
     }
 };
 
@@ -64,9 +57,9 @@ const mapStateToProps = state => {
     };
 };
 
-const mapDispatchToProps = { /* employeeUpdate, */ employeeCreate };
+const mapDispatchToProps = { employeeCreate, employeeUpdate };
 
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(EmployeeUpdate);
+)(EmployeeCreate);

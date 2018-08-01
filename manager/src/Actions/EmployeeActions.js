@@ -26,7 +26,7 @@ export const employeeDelete = ({ uid }) => {
 };
 
 export const employeeSave = ({ name, phone, shift, uid }) => {
-    console.log('Updating uid: ' + uid);
+    console.log('employeeSave uid: ' + uid);
     return dispatch => {
         firebaseDatabaseRef(`/employees/${uid}`)
             .set({ name, phone, shift })
@@ -42,7 +42,7 @@ export const employeeSave = ({ name, phone, shift, uid }) => {
 };
 
 export const employeeCreate = ({ name, phone, shift }) => {
-    console.log('Creating new employee: ' + name + ` - ${phone} - ` + shift);
+    console.log('employeeCreate ' + name + ` - ${phone} - ` + shift);
 
     return dispatch => {
         firebaseDatabaseRef('/employees')
@@ -55,7 +55,7 @@ export const employeeCreate = ({ name, phone, shift }) => {
 };
 
 export const employeeFetch = () => {
-    console.log('Action employeeFetch invoked!');
+    console.log('employeeFetch');
     return dispatch => {
         firebaseDatabaseRef('/employees').on('value', snapshot => {
             dispatch({ type: ACTION_EMPLOYEE.fetch, payload: snapshot.val() });

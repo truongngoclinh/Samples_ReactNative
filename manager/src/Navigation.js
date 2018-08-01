@@ -3,7 +3,7 @@ import { Scene, Router, Actions } from 'react-native-router-flux';
 import { View, Image, Text, TouchableOpacity } from 'react-native';
 import LoginForm from './Login/LoginForm';
 import EmployeeList from './Employee/EmployeeList';
-import EmployeeUpdate from './Employee/EmployeeUpdate';
+import EmployeeCreate from './Employee/EmployeeCreate';
 import EmployeeEdit from './Employee/EmployeeEdit';
 
 export default (RouterComponent = () => {
@@ -19,8 +19,8 @@ export default (RouterComponent = () => {
         console.log(type);
         if (type == 'back') {
             return Actions.pop();
-        } else if (type == 'employee_update') {
-            return Actions.employee_update();
+        } else if (type == 'employee_create') {
+            return Actions.employee_create();
         }
     };
 
@@ -56,15 +56,8 @@ export default (RouterComponent = () => {
                 </Scene>
                 <Scene key="main">
                     <Scene
-                        // rightButtonImage={require('../assets/images/icon_nav_add.png')}
-                        // rightTitle="Add"
-                        // onRight={() => {
-                        // console.log('Right!');
-                        // Actions.employee_update();
-                        // }}
-                        // type="reset"
                         renderRightButton={() =>
-                            renderButton('employee_update')
+                            renderButton('employee_create')
                         }
                         component={EmployeeList}
                         title="Employee List"
@@ -72,8 +65,8 @@ export default (RouterComponent = () => {
                     />
                     <Scene
                         renderLeftButton={() => renderButton('back')}
-                        key="employee_update"
-                        component={EmployeeUpdate}
+                        key="employee_create"
+                        component={EmployeeCreate}
                         title="Employee create"
                     />
                     <Scene

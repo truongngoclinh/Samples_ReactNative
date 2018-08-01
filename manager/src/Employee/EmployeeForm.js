@@ -5,6 +5,11 @@ import { connect } from 'react-redux';
 import { employeeUpdate } from '../Actions';
 
 class EmployeeForm extends Component {
+    componentWillMount() {
+        console.log('Employeeform props');
+        console.dir(this.props);
+    }
+
     render() {
         return (
             <View>
@@ -17,7 +22,7 @@ class EmployeeForm extends Component {
                             })
                         }
                         label="Name"
-                        placeHolder="Linh"
+                        placeHolder="name"
                         value={this.props.name}
                     />
                 </CardSection>
@@ -30,7 +35,7 @@ class EmployeeForm extends Component {
                             })
                         }
                         label="Phone"
-                        placeHolder="975439489"
+                        placeHolder="phone"
                         value={this.props.phone}
                     />
                 </CardSection>
@@ -72,11 +77,12 @@ const styles = {
 };
 
 const mapStateToProps = state => {
-    const { name, phone, shift } = state.employee;
+    const { name, phone, shift, created } = state.employee;
     return {
         name: name,
         phone: phone,
-        shift: shift
+        shift: shift,
+        created: created
     };
 };
 

@@ -8,20 +8,15 @@ import { Card } from '../Components/common';
 
 class EmployeeList extends Component {
     componentWillMount() {
-        console.log('componentWillMount');
-        console.dir(this.props);
         this.props.employeeFetch();
         this.createDataSource(this.props.employees);
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log('componentWillReceiveProps ' + nextProps);
         this.createDataSource(nextProps.employees);
     }
 
     createDataSource(employees) {
-        console.log('createDataSource');
-        console.dir(employees);
         const ds = new ListView.DataSource({
             rowHasChanged: (r1, r2) => r1 != r2
         });

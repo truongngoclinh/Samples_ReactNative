@@ -8,8 +8,6 @@ const INITIAL_STATE = {
 };
 
 export default (state = INITIAL_STATE, action) => {
-    console.log(action.type);
-    console.dir(action);
     switch (action.type) {
         case ACTION_EMPLOYEE.update:
             return {
@@ -19,10 +17,6 @@ export default (state = INITIAL_STATE, action) => {
             };
 
         case ACTION_EMPLOYEE.create:
-            /*             const { name, phone, shift } = action.payload;
-            return { ...state, name, phone, shift, deleted: '0' }; */
-            return INITIAL_STATE;
-
         case ACTION_EMPLOYEE.save_success:
             return INITIAL_STATE;
 
