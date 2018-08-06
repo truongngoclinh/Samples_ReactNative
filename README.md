@@ -51,7 +51,10 @@ In this repo, I try testing [`react native`](https://facebook.github.io/react-na
   + ConfirmDialog  
     ![simulator screen shot - iphone 7 - 2018-08-01 at 09 58 39](https://user-images.githubusercontent.com/13033746/43498520-82eef96c-9571-11e8-8231-fdda127503fd.png)
   
-- [x] Advanced concepts
+- [x] Swipe animation sample
+  + how to use LayoutAnimation, AnimatedView to create tinder's cards swipe animation.
+  
+- [ ] next sample
 
 
 
