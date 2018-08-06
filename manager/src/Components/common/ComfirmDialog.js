@@ -63,8 +63,6 @@ const styles = {
     containerStyle: {
         backgroundColor: 'rgba(0,0,0,0.75)',
         flex: 1,
-        // width: screenWidth * 0.9,
-        // height: 240,
         justifyContent: 'center',
         padding: 20,
         alignItems: 'center'

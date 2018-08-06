@@ -1,4 +1,4 @@
-import { comebineReduceres, combineReducers } from 'redux';
+import { combineReducers } from 'redux';
 import LibraryReducer from './LibraryReducer';
 import SelectionReducer from './SelectionReducer';
 
