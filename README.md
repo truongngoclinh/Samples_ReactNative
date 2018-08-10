@@ -33,8 +33,9 @@ In this repo, I try testing [`react native`](https://facebook.github.io/react-na
   + app redux structure:
   + ![screen shot 2018-07-20 at 18 12 11](https://user-images.githubusercontent.com/13033746/43498311-93240daa-9570-11e8-84a4-ad68797baec3.png)
     ![screen shot 2018-07-23 at 11 02 41](https://user-images.githubusercontent.com/13033746/43498300-8bfb07ae-9570-11e8-822d-68a2f8884434.png)
-
- 
+  + how redux work, current middleware is redux-thunk
+    ![screen shot 2018-08-10 at 11 29 44](https://user-images.githubusercontent.com/13033746/43938974-12b19246-9c91-11e8-9112-f51993ed0421.png)
+    
   
 - [x] Employee management use firebase realtime database
   + more complicated project: `redux with tremedeous states, navigation, navigation bar, passing params to component as updating props, ListView, react-native-router-flux, react-nativ-commucations, ConfirmDialog, separate actions, reducers file`
@@ -54,7 +55,8 @@ In this repo, I try testing [`react native`](https://facebook.github.io/react-na
 - [x] Swipe animation sample
   + how to use LayoutAnimation, AnimatedView to create tinder's cards swipe animation.
   
-- [ ] next sample
+- [x] My-indeeds, job finder base on map location
+  + `MapView`, `react-navigation` to navigate between screens, modify tablayout, headerlayout, `qs` stringtify to http url, `AsyncStorage`, async-await (then()), more `react-native-elements`, `persist state offline`, `push notification`
 
 
 
