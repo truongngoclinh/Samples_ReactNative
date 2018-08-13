@@ -56,7 +56,7 @@ In this repo, I try testing [`react native`](https://facebook.github.io/react-na
   + how to use LayoutAnimation, AnimatedView to create tinder's cards swipe animation.
   
 - [x] My-indeeds, job finder base on map location
-  + `MapView`, `react-navigation` to navigate between screens, modify tablayout, headerlayout, `qs` stringtify to http url, `AsyncStorage`, async-await (then()), more `react-native-elements`, `persist state offline`, `push notification`
+  + `Facebook authenticated`, `MapView`, `react-navigation` to navigate between screens, modify tablayout, headerlayout, `qs` stringtify to http url, `AsyncStorage`, async-await (then()), more `react-native-elements`, `persist state offline`, `push notification`
 
 
 
