@@ -69,7 +69,7 @@ cfc6dff6.png)
 
   ![simulator screen shot - iphone 8 plus - 2018-08-13 at 17 45 35](https://user-images.githubusercontent.com/13033746/44027460-c2894c40-9f20-11e8-9700-f93a626521dd.png)
    
-   [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Ud6KRz3p5vs/0.jpg)](https://www.youtube.com/watch?v=UWXtLBZiKlk)
+   [![Screen records](https://i.ytimg.com/vi/UWXtLBZiKlk/1.jpg?time=1534157743824)](https://www.youtube.com/watch?v=UWXtLBZiKlk)
 
 
 
