@@ -57,6 +57,21 @@ In this repo, I try testing [`react native`](https://facebook.github.io/react-na
   
 - [x] My-indeeds, job finder base on map location
   + `Facebook authenticated`, `MapView`, `react-navigation` to navigate between screens, modify tablayout, headerlayout, `qs` stringtify to http url, `AsyncStorage`, async-await (then()), more `react-native-elements`, `persist state offline`, `push notification`
+  ![simulator screen shot - iphone 8 plus - 2018-08-13 at 17 45 08](https://user-images.githubusercontent.com/13033746/44027464-c354541c-9f20-11e8-9568-973a5d07351d.png)
+    c2ecdba2-9f20-11e8-9479-6fe4
+    
+  ![simulator screen shot - iphone 8 plus - 2018-08-13 at 17 45 19](https://user-images.githubusercontent.com/13033746/44027507-e9ce85c2-9f20-11e8-842e-66da2b38a0a2.png)
+cfc6dff6.png)
+
+  ![simulator screen shot - iphone 8 plus - 2018-08-13 at 17 45 21](https://user-images.githubusercontent.com/13033746/44027462-
+
+  ![simulator screen shot - iphone 8 plus - 2018-08-13 at 17 45 25](https://user-images.githubusercontent.com/13033746/44027461-c2b8e4c8-9f20-11e8-89c5-87d7af3c48b9.png)
+
+  ![simulator screen shot - iphone 8 plus - 2018-08-13 at 17 45 35](https://user-images.githubusercontent.com/13033746/44027460-c2894c40-9f20-11e8-9700-f93a626521dd.png)
+   
+  ![screen records](https://www.youtube.com/watch?v=UWXtLBZiKlk&feature=youtu.be)
+
+
 
 
 
